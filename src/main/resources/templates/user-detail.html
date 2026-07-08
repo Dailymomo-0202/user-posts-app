@@ -1,0 +1,24 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Post List</title>
+  </head>
+  <body>
+    <h1 th:text="${user.username}"></h1>
+    <p th:text="${user.email}"></p>
+    <p th:text="${user.phone}"></p>
+    <p th:text="${user.companyName}"></p>
+    <p th:text="${user.website}"></p>
+
+    <h2>Posts</h2>
+    <ul>
+      <li th:each="post : ${posts}">
+        <strong th:text="${post.title}"></strong>
+        <p th:text="${post.body}"></p>
+      </li>
+    </ul>
+
+    <a th:href="@{/users}">Back to User List</a>
+  </body>
+</html>
