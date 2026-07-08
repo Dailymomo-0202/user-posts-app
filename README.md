@@ -28,15 +28,16 @@ SQL database, and displays it through a simple web interface.
 ## How to Run
 Clone the repository, then from the project root:
 
-```
 bash
+```
 ./mvnw spring-boot:run
 ```
 
-```
 Once started, open your browser at:
+```
 http://localhost:8080/users
 ```
+
 
 ## Project Structure
 src/main/java/com/yaochen/user_posts_app/
